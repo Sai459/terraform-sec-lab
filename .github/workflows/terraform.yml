@@ -46,7 +46,7 @@ jobs:
     name: Terraform Apply (with Approval)
     runs-on: ubuntu-latest
     needs: terraform-plan
-    environment: production  # 🔐 Requires manual approval before running
+    environment: production  # 🔐 Requires manual approval code before running
 
     steps:
       - name: Checkout repo
