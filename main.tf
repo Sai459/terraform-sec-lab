@@ -1,8 +1,6 @@
-provider "aws" {
-  region = var.aws_region
-}
 
-# 🧩 Retrieve credentials from AWS Secrets Manager
+
+# 🧩 Retrieve credentials from AWS Secrets Managers
 data "aws_secretsmanager_secret_version" "example" {
   secret_id = var.secret_name
 }
